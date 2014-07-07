@@ -1,12 +1,14 @@
-source ./aliases/aliases.zsh
-source ./aliases/latex.zsh
+SOURCE=${0%/*}
 
-source ./custom/load.zsh
-source ./custom/z.zsh
+source $SOURCE/aliases/aliases.zsh
+source $SOURCE/aliases/latex.zsh
 
-source ./env/env.zsh
+source $SOURCE/custom/load.zsh
+source $SOURCE/custom/z.zsh
 
-source ./functions/functions.zsh
-source ./functions/tmux.zsh
+source $SOURCE/env/env.zsh
 
-source ./path/paths.zsh
+source $SOURCE/functions/functions.zsh
+source $SOURCE/functions/tmux.zsh
+
+source $SOURCE/path/paths.zsh
