@@ -41,6 +41,10 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
     # Add Java jars (like checkstyle, etc)
     export PATH=$PATH:~/jars
 elif [[ $CURRENT_OS == 'Linux' ]]; then
+    # Prefix /usr/local/bin for brew
+    export PATH="$HOME/.linuxbrew/bin:$PATH"
+    export LD_LIBRARY_PATH="$HOME/.linuxbrew/lib:$LD_LIBRARY_PATH"
+
     #  Add the bin/Arch directory
     export PATH=$PATH:~/bin/Arch
     export PATH=$PATH:~/bin/appengine
