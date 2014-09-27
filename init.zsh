@@ -14,3 +14,5 @@ source $SOURCE/functions/tmux.zsh
 source $SOURCE/path/paths.zsh
 
 source $SOURCE/completion/aws.zsh
+
+source $SOURCE/colors/config.zsh
