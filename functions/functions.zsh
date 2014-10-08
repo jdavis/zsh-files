@@ -2,7 +2,7 @@
 # Functions
 #
 
-# Display Content of cd folder
+# Automatically run ls when cd-ing into a directory
 function cd() {
     builtin cd $* && ls;
 }
