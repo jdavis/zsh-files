@@ -13,11 +13,6 @@ function ip-addr() {
     echo
 }
 
-# Display a random Slashdot, HTTP header, Futurama quote
-function futurama() {
-    curl -Is slashdot.org | egrep ^X-(F|B) | cut -d - -f 2
-}
-
 # Time ZSH startup
 function zsh-time() {
     time zsh -i -c exit
