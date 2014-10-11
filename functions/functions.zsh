@@ -2,7 +2,7 @@
 # Functions
 #
 
-# Display Content of cd folder
+# Automatically run ls when cd-ing into a directory
 function cd() {
     builtin cd $* && ls;
 }
@@ -11,11 +11,6 @@ function cd() {
 function ip-addr() {
     wget -qO- http://ipecho.net/plain
     echo
-}
-
-# Display a random Slashdot, HTTP header, Futurama quote
-function futurama() {
-    curl -Is slashdot.org | egrep ^X-(F|B) | cut -d - -f 2
 }
 
 # Time ZSH startup
