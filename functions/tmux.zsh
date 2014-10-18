@@ -22,7 +22,6 @@
 
 hash tmux 2> /dev/null || {
     alias tmux='echo tmux not installed'
-    return
 }
 
 # Default command is to make a new session
