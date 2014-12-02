@@ -31,6 +31,9 @@ alias -g NUL=' > /dev/null 2>&1'
 # I like to be safe...
 alias rm='rm -i'
 
+# derp derp
+alias mkdirp='mkdir -p'
+
 # Alias Git, moved most other aliases to ~/.gitconfig
 # For some reason, Git doesn't like capitalized aliases. Some must remain.
 alias g='git'
