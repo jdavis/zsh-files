@@ -54,6 +54,10 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
     alias showhiddenfiles='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'
     alias hidehiddenfiles='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'
 
+    alias 'kb-disable'='sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/'
+    alias 'kb-enable'='sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/'
+
+
     # Custom search script
     alias ebook='locates ~/EBooks '
 
