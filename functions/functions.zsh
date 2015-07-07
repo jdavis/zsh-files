@@ -3,23 +3,23 @@
 #
 
 # Automatically run ls when cd-ing into a directory
-function cd() {
+cd() {
     builtin cd $* && ls;
 }
 
 #Get IP
-function ip-addr() {
+ip-addr() {
     wget -qO- http://ipecho.net/plain
     echo
 }
 
 # Time ZSH startup
-function zsh-time() {
+zsh-time() {
     time zsh -i -c exit
 }
 
 # Run a command or multiple commands without saving it in the $HISTFILE
-function incognito() {
+incognito() {
     if [ -z $EDITOR ]; then
         EDITOR=vim
     fi
@@ -41,7 +41,7 @@ function incognito() {
 }
 
 # uncompress depending on extension...
-function extract() {
+extract() {
     if [ -f $1 ] ; then
         case $1 in
             *.tar.bz2)
@@ -72,4 +72,9 @@ function extract() {
     else
         echo "'$1' is not a valid file"
     fi
+}
+
+mkcd() {
+    mkdir -p $1
+    cd $1
 }
