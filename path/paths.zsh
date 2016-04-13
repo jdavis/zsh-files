@@ -37,6 +37,8 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
     export PATH=$PATH:~/bin/Mac
     # Add all npm packages
     export PATH=$PATH:/usr/local/share/npm/bin
+    # Add Postgres.app
+    export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
     # Add Java jars (like checkstyle, etc)
     export PATH=$PATH:~/jars
