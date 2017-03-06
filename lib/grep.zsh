@@ -18,7 +18,11 @@ elif grep-flag-available --exclude=.cvs; then
         GREP_OPTIONS+=" --exclude=$PATTERN"
     done
 fi
-unfunction grep-flag-available
 
-export GREP_OPTIONS="$GREP_OPTIONS"
+# export grep settings
+alias grep="grep $GREP_OPTIONS"
 export GREP_COLOR='1;32'
+
+#clean
+unset GREP_OPTIONS
+unfunction grep-flag-available
