@@ -78,3 +78,23 @@ mkcd() {
     mkdir -p $1
     cd $1
 }
+
+# Rename a file and keep it in the same location
+rename() {
+    if [ "$#" -ne 2 ]; then
+        echo "usage: $0 path/to/file/old_name new_name"
+        return
+    fi
+
+    mv $1 `dirname $1`/$2
+}
+
+# Duplicate a file to a new name in the same location
+dup() {
+    if [ "$#" -ne 2 ]; then
+        echo "usage: $0 path/to/file/file copied_file"
+        return
+    fi
+
+    cp $1 `dirname $1`/$2
+}

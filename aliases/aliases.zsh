@@ -43,7 +43,6 @@ alias gP='git push'
 # Racket: load Readline
 alias racketrl='racket -il readline'
 
-
 #
 # OS Specific Aliases
 #

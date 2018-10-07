@@ -42,6 +42,10 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
 
     # Add Java jars (like checkstyle, etc)
     export PATH=$PATH:~/jars
+
+    # Custom Go path & add to path
+    export GOPATH=~/.go
+    export PATH=$PATH:~/.go/bin
 elif [[ $CURRENT_OS == 'Linux' ]]; then
     # Prefix /usr/local/bin for brew if it exists
     if hash brew 2>/dev/null; then
