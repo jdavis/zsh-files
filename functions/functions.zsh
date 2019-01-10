@@ -74,9 +74,16 @@ extract() {
     fi
 }
 
+# Make a dir and cd into it
 mkcd() {
     mkdir -p $1
     cd $1
+}
+
+# Make directories if it doesn't exist and touch the file
+mktouch() {
+    mkdir -p `dirname $1`
+    touch $1
 }
 
 # Rename a file and keep it in the same location
