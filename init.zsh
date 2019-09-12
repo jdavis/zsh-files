@@ -1,7 +1,6 @@
 SOURCE=${0%/*}
 
 # Lib
-
 source $SOURCE/lib/completion.zsh
 source $SOURCE/lib/git.zsh
 source $SOURCE/lib/grep.zsh
@@ -35,3 +34,6 @@ source $SOURCE/completion/aws.zsh
 
 # Colors
 source $SOURCE/colors/config.zsh
+
+# Themes
+source $SOURCE/themes/jdavis.zsh-theme
