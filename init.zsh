@@ -30,7 +30,8 @@ source $SOURCE/functions/tmux.zsh
 source $SOURCE/path/paths.zsh
 
 # AWS completion
-source $SOURCE/completion/aws.zsh
+# TODO: Fix this, some weird things going on with this
+#source $SOURCE/completion/aws.zsh
 
 # Colors
 source $SOURCE/colors/config.zsh
